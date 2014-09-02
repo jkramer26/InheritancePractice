@@ -12,6 +12,7 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee{
     private double totalSales;
     private double pay; 
     private double commissionPay;
+    private double employeePay;
     
     //constructor
     public SalaryPlusCommissionEmployee(String name, int employeeID, char gender, int age, double annualSalary, 
@@ -21,19 +22,28 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee{
         this.totalSales = totalSales;
     }
     
-    //method to return the amount of money the employee made of of their commissionRate & totalSales
-    public double getCommissionPay() {
-        commissionPay = totalSales * commissionRate;
-        
-        return commissionPay;
-    }
-    
     public double getCommissionRate() {
         return commissionRate;
     }
 
     public double getTotalSales() {
         return totalSales;
+    }
+    
+    //method to return the amount of money the employee made of of their commissionRate & totalSales
+//    public double getCommissionPay() {
+//        commissionPay = (totalSales * commissionRate);
+//        
+//        return commissionPay;
+//    }
+    
+    public double getEmployeePay() {
+        //double employeePay; 
+        commissionPay = (totalSales * commissionRate);
+        
+        employeePay = (commissionPay + getAnnualSalary());
+        
+        return employeePay;
     }
     
     

@@ -1,15 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
 package inheritancepractice;
 
-/**
- *
- * @author owner
- */
 public class AbstractStart {
-    
+    public static void main(String[] args) {
+        myabstract.SalaryPlusCommissionEmployee jessica = new myabstract.SalaryPlusCommissionEmployee("Jessica Kramer", 123, 'f', 23, 40000, .10, 20000);
+        
+        
+        System.out.println(jessica.getCommissionRate());
+        System.out.println(jessica.getCommssionPay());
+        System.out.println(jessica.getEmployeePay());
+        
+        
+    }
 }

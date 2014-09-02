@@ -54,6 +54,9 @@ public class Employee {
     }
 
     public void setAge(int age) {
+        if(age < 0 || age > 130) {
+            throw new IllegalArgumentException();
+        }
         this.age = age;
     }
     
