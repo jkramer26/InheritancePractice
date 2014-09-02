@@ -11,22 +11,24 @@ public class HourlyEmployee extends Employee {
     private double payRate;
     private double hoursWorked;
     
-    //Constructor that accepts name, employeeID, gender, and age as arguments
-    public HourlyEmployee(String name, int employeeID, char gender, int age) {
+    //Constructor that inherits superclass's constructor and sets the hourly employee
+    //payrate and number of hours worked
+    public HourlyEmployee(String name, int employeeID, char gender, int age, double payRate, double hoursWorked) {
         super(name, employeeID, gender, age);
-    }
-    
-    //method that will set the employees payrate
-    public void setPayRate(double payRate) {
         this.payRate = payRate;
-    }
-    
-    //method that will set the number of hours the employee worked
-    public void setHoursWorked(double hoursWorked) {
         this.hoursWorked = hoursWorked;
     }
+
+    public double getPayRate() {
+        return payRate;
+    }
+
+    public double getHoursWorked() {
+        return hoursWorked;
+    }
     
-    //returns employee pay 
+    
+    //returns employee pay & overrides abstract method in superclass
     @Override
     public double getEmployeePay() {
         double employeePay;
@@ -37,5 +39,10 @@ public class HourlyEmployee extends Employee {
         //return calculated employee pay
         return employeePay;
     }
+
+    
+
+    
+    
     
 }

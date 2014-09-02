@@ -17,6 +17,24 @@ public abstract class Employee {
         this.age = age;
     }
     
+    //
+    public String getName() {
+        return name;
+    }
+
+    public int getEmployeeID() {
+        return employeeID;
+    }
+
+    public char getGender() {
+        return gender;
+    }
+
+    public int getAge() {
+        return age;
+    }
+    
+    
     //abstract method to get pay
     public abstract double getEmployeePay();
     
