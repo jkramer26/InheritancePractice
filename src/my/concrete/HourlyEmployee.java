@@ -9,6 +9,7 @@ package my.concrete;
 public class HourlyEmployee extends Employee {
     private double payRate;
     private double hoursWorked;
+    //should be weekly pay
     private double employeePay;
     
     //Constructor that inherits superclass's constructor and sets the hourly employee

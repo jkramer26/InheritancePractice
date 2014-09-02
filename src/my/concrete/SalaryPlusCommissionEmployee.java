@@ -10,7 +10,7 @@ package my.concrete;
 public class SalaryPlusCommissionEmployee extends SalariedEmployee{
     private double commissionRate;
     private double totalSales;
-    private double pay; 
+    //private double pay;  //not used
     private double commissionPay;
     private double employeePay;
     

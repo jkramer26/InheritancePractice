@@ -5,6 +5,7 @@ package myinterface;
 
 public interface Employee {
     
+    //always be sure to use abstract keyword in interfaces
     public abstract String getName();
     public abstract void setName(String name);
     

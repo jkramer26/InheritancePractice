@@ -4,6 +4,7 @@ package myabstract;
 
 public abstract class Employee {
     
+    //could have a seperate name class. Good encapsulation
     private String name;
     private int employeeID;
     private char gender;
@@ -21,6 +22,8 @@ public abstract class Employee {
     public String getName() {
         return name;
     }
+    
+    //should have a name setter
 
     public int getEmployeeID() {
         return employeeID;

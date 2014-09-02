@@ -17,7 +17,8 @@ public class SalariedEmployee extends Employee {
     public double getAnnualSalary() {
         return annualSalary;
     }
-  
+    
+    //should have a setter for annual salary
     
     //method to return annual salary and override the superclass method
     @Override

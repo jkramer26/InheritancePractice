@@ -4,9 +4,10 @@
 
 package myinterface;
 
-
+//inherits implementation from salariedemployee so not needed to extend
 public class SalaryPlusCommissionEmployee extends SalariedEmployee implements Employee {
-    
+   
+   //should not need these if just extending
    private String name;
    private int employeeID;
    private char gender;
@@ -44,8 +45,8 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee implements Em
         return commissionPay;
     }
     
-    
-    //overiding methods from employee interface
+    /** DON'T NEED ALL THESE BECAUSE THEY ARE INHERITED
+    //overriding methods from employee interface
     @Override
     public String getName() {
         return name;
@@ -84,7 +85,7 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee implements Em
     public void setAge(int age) {
         this.age = age;
     }
-
+    */
 
     @Override
     public double getEmployeePay() {
