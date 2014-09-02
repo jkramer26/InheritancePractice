@@ -1,15 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
 package myinterface;
 
-/**
- *
- * @author owner
- */
-public class Employee {
+
+public interface Employee {
+    
+    public abstract String getName();
+    public abstract void setName(String name);
+    
+    public abstract int getEmployeeID();
+    public abstract void setEmployeeID(int age);
+    
+    public abstract char getGender();
+    public abstract void setGender(char gender);
+    
+    public abstract int getAge();
+    public abstract void setAge(int age);
+    
+    public abstract double getEmployeePay();
     
 }
