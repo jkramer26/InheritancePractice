@@ -13,15 +13,6 @@ public class HourlyEmployee extends Employee {
     
     //Constructor that inherits superclass's constructor and sets the hourly employee
     //payrate and number of hours worked
-    /**
-     * 
-     * @param name
-     * @param employeeID
-     * @param gender
-     * @param age
-     * @param payRate
-     * @param hoursWorked 
-     */
     public HourlyEmployee(String name, int employeeID, char gender, int age, double payRate, double hoursWorked) {
         super(name, employeeID, gender, age);
         this.payRate = payRate;

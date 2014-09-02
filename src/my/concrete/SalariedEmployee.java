@@ -1,15 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package my.concrete;
+ 
+public class SalariedEmployee extends Employee {
+    private double annualSalary;
 
-/**
- *
- * @author owner
- */
-public class SalariedEmployee {
+    public SalariedEmployee(String name, int employeeID, char gender, int age, double annualSalary) {
+        super(name, employeeID, gender, age);
+        this.annualSalary = annualSalary;
+    }
     
+    public double getEmployeeSalary() {
+        return annualSalary;
+    }
 }
