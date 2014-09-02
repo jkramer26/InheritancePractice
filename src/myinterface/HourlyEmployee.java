@@ -19,6 +19,15 @@ public class HourlyEmployee implements Employee {
         this.payRate = payRate;
         this.hoursWorked = hoursWorked;
     }
+
+    public double getPayRate() {
+        return payRate;
+    }
+
+    public double getHoursWorked() {
+        return hoursWorked;
+    }
+    
     
     //overiding methods from employee interface
     @Override

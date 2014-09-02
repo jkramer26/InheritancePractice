@@ -1,6 +1,6 @@
 package inheritancepractice;
 
-import my.concrete.*;
+//import my.concrete.*;
 
 public class ConcreteStart {
     public static void main(String[] args) {
