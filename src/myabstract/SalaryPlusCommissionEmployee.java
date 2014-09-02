@@ -26,7 +26,7 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee {
         return totalSales;
     }
     
-    public double getCommssionPay() {
+    public double getCommissionPay() {
         //calculate the amount of commission pay the employee earned
         commissionPay = (commissionRate * totalSales);
         

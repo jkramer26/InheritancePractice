@@ -32,6 +32,7 @@ public class AbstractStart {
         System.out.println("Annual Salary: " + jessica.getAnnualSalary()
                             + "\nCommission Rate: " + jessica.getCommissionRate()
                             + "\nTotal Sales: " + jessica.getTotalSales()
+                            + "\nCommission Pay: " + jessica.getCommissionPay()
                             + "\nAnnual salary plus commission salary: " + jessica.getEmployeePay());
         
         

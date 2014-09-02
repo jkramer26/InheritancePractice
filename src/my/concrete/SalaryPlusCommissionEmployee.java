@@ -31,11 +31,11 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee{
     }
     
     //method to return the amount of money the employee made of of their commissionRate & totalSales
-//    public double getCommissionPay() {
-//        commissionPay = (totalSales * commissionRate);
-//        
-//        return commissionPay;
-//    }
+    public double getCommissionPay() {
+        commissionPay = (totalSales * commissionRate);
+        
+        return commissionPay;
+    }
     
     public double getEmployeePay() {
         //double employeePay; 
