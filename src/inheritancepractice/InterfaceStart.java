@@ -31,6 +31,7 @@ public class InterfaceStart {
         System.out.println("Annual Salary: " + jessica.getAnnualSalary()
                             + "\nCommission Rate: " + jessica.getCommissionRate()
                             + "\nTotal Sales: " + jessica.getTotalSales()
-                            + "\nAnnual salary plus commission salary: " + jessica.getEmployeePay());
+                            + "\nCommission Pay: " + jessica.getCommissionPay()
+                            + "\nAnnual salary plus commission pay: " + jessica.getEmployeePay());
     }
 }

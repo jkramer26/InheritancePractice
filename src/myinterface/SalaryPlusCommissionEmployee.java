@@ -21,6 +21,10 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee implements Em
     public SalaryPlusCommissionEmployee(String name, int employeeID, char gender, int age, double annualSalary, 
             double commissionRate, double totalSales) {
         super(name, employeeID, gender, age, annualSalary);
+        this.name = name;
+        this.employeeID = employeeID;
+        this.gender = gender;
+        this.age = age;
         this.commissionRate = commissionRate;
         this.totalSales = totalSales;
     }
@@ -33,7 +37,7 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee implements Em
         return totalSales;
     }
     
-    public double getCommssionPay() {
+    public double getCommissionPay() {
         //calculate the amount of commission pay the employee earned
         commissionPay = (commissionRate * totalSales);
         
